@@ -4,11 +4,14 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Dostupni proizvodi</h2>
+<h2>Dostupni proizvodi iz baze</h2>
 <br />
 
 <p>
     @Html.ActionLink("Kreiraj nov proizvod", "Create")
+</p>
+<p>
+    @Html.ActionLink("Pregled proizvoda iz JSON fajla", "Index", "Proizvod")
 </p>
 <table class="table">
     <tr>

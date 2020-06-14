@@ -20,10 +20,10 @@ namespace MVCApp.Controllers
         }
 
         // GET: Home/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
+        //public ActionResult Details(int id)
+        //{
+        //    return View();
+        //}
 
         // GET: Home/Create
         public ActionResult Create()

@@ -1,0 +1,70 @@
+﻿@model List<MVCApp.Models.Proizvod>
+
+@{
+    ViewBag.Title = "View";
+}
+
+
+<h2>Pregled svih proizvoda iz JSON fajla</h2>
+<br />
+@foreach (var item in Model)
+{
+    <p>
+        Id: @item.Id<br />
+        Naziv: @item.Naziv<br />
+        Opis: @item.Opis<br />
+        Kategorija: @item.Kategorija<br />
+        Proizvodjac: @item.Proizvodjac<br />
+        Dobavljac: @item.Dobavljac<br />
+        Cena: @item.Cena<br />
+    </p>
+
+}
+
+
+<h2>Dodaj ili izmeni proizvod</h2>
+<h4>Za izmenu podataka o proizvodu uneti njegov id</h4>
+<br />
+@using (Html.BeginForm("Index", "Proizvod", FormMethod.Post))
+{
+    MVCApp.Models.Proizvod proizvod = new MVCApp.Models.Proizvod();
+    <label asp-for="@proizvod.Id">Id</label>
+    <br />
+    <input type="text" asp-for="@proizvod.Id" name="Id" />
+    <br />
+    <br />
+    <label asp-for="@proizvod.Naziv">Naziv</label>
+    <br />
+    <input type="text" asp-for="@proizvod.Naziv" name="Naziv" />
+    <br />
+    <br />
+    <label asp-for="@proizvod.Opis">Opis</label>
+    <br />
+    <input type="text" asp-for="@proizvod.Opis" name="Opis" />
+    <br />
+    <br />
+    <label asp-for="@proizvod.Kategorija">Kategorija</label>
+    <br />
+    <input type="text" asp-for="@proizvod.Kategorija" name="Kategorija" />
+    <br />
+    <br />
+    <label asp-for="@proizvod.Proizvodjac">Proizvodjac</label>
+    <br />
+    <input type="text" asp-for="@proizvod.Proizvodjac" name="Proizvodjac" />
+    <br />
+    <br />
+    <label asp-for="@proizvod.Dobavljac">Dobavljac</label>
+    <br />
+    <input type="text" asp-for="@proizvod.Dobavljac" name="Dobavljac" />
+    <br />
+    <br />
+    <label asp-for="@proizvod.Cena">Cena</label>
+    <br />
+    <input type="text" asp-for="@proizvod.Cena" name="Cena" />
+    <br />
+    <br />
+
+    <input type="submit" value="Kreiraj ili izmeni" class="btn btn-success"/>
+}
+
+

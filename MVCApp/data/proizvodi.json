@@ -1,0 +1,29 @@
+[
+  {
+    "Id": 5,
+    "Naziv": "Jogurt",
+    "Opis": "Sa 2,8% mm",
+    "Kategorija": "Gusti",
+    "Proizvodjac": "Imlek",
+    "Dobavljac": "Imlek",
+    "Cena": 110.0
+  },
+  {
+    "Id": 6,
+    "Naziv": "Nutella",
+    "Opis": "Nutela",
+    "Kategorija": "Krem",
+    "Proizvodjac": "Ferrero",
+    "Dobavljac": "Delta",
+    "Cena": 500.0
+  },
+  {
+    "Id": 7,
+    "Naziv": "Plazma",
+    "Opis": "Keks",
+    "Kategorija": "Keks",
+    "Proizvodjac": "Bambi",
+    "Dobavljac": "Bambi",
+    "Cena": 245.0
+  }
+]
